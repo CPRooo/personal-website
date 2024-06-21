@@ -1,33 +1,42 @@
+/* Reset default styles */
 body, html {
     margin: 0;
     padding: 0;
+    height: 100%;
+}
+
+/* Flexbox to center everything vertically and horizontally */
+body {
+    display: flex;
+    flex-direction: column; /* Ensure flex items stack vertically */
+    align-items: center;
+    justify-content: center;
+    background-color: #f4f4f4;
     font-family: Arial, sans-serif;
 }
 
+/* Sticky header styles */
 .sticky-header {
     position: -webkit-sticky; /* For Safari */
     position: sticky;
     top: 0;
     background-color: #333;
     color: white;
-    padding: 5px 0; /* Reduced padding for a smaller header */
+    padding: 10px 0;
     z-index: 1000;
     width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    text-align: center;
 }
 
 .sticky-header h1 {
     margin: 0;
-    padding: 5px 20px; /* Adjusted padding */
-    text-align: center;
-    font-size: 1.5rem; /* Reduced font size */
+    padding: 10px 20px;
+    font-size: 1.5rem;
 }
 
 .sticky-header nav {
     margin: 0;
-    padding: 5px 20px; /* Adjusted padding */
+    padding: 5px 20px;
     width: 100%;
 }
 
@@ -40,14 +49,14 @@ body, html {
 }
 
 .sticky-header nav ul li {
-    margin: 0 5px; /* Adjusted margin for spacing between nav items */
+    margin: 0 10px;
 }
 
 .sticky-header nav ul li a {
     color: white;
     text-decoration: none;
-    padding: 5px 10px; /* Reduced padding */
-    font-size: 1rem; /* Reduced font size */
+    padding: 5px 10px;
+    font-size: 1rem;
 }
 
 .sticky-header nav ul li a:hover {
@@ -55,13 +64,25 @@ body, html {
     border-radius: 4px;
 }
 
+/* Main content area styles */
 main {
-    padding: 20px;
-    
+    width: 100%; /* Ensure main takes full width */
     text-align: center;
+    padding: 20px;
 }
 
 section {
     margin-top: 25px;
     margin-bottom: 25px;
+}
+
+/* Container for PDF display */
+.pdf-container {
+    width: 60%;
+    height: 80vh;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    overflow: hidden;
+    margin-top: 20px;
 }
