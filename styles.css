@@ -8,12 +8,12 @@ body, html {
 }
 
 .sticky-header {
-    position: -webkit-sticky; /* For Safari */
+    position: -webkit-sticky; 
     position: sticky;
     top: 0;
     background-color: #333;
     color: white;
-    padding: 5px 0; /* Reduced padding for a smaller header */
+    padding: 5px 0;
     z-index: 1000;
     width: 100%;
     display: flex;
@@ -23,14 +23,14 @@ body, html {
 
 .sticky-header h1 {
     margin: 0;
-    padding: 5px 20px; /* Adjusted padding */
+    padding: 5px 20px; 
     text-align: center;
-    font-size: 1.5rem; /* Reduced font size */
+    font-size: 1.5rem; 
 }
 
 .sticky-header nav {
     margin: 0;
-    padding: 5px 20px; /* Adjusted padding */
+    padding: 5px 20px; 
     width: 100%;
 }
 
@@ -43,14 +43,14 @@ body, html {
 }
 
 .sticky-header nav ul li {
-    margin: 0 5px; /* Adjusted margin for spacing between nav items */
+    margin: 0 5px; 
 }
 
 .sticky-header nav ul li a {
     color: white;
     text-decoration: none;
-    padding: 5px 10px; /* Reduced padding */
-    font-size: 1rem; /* Reduced font size */
+    padding: 5px 10px; 
+    font-size: 1rem; 
 }
 
 .sticky-header nav ul li a:hover {
