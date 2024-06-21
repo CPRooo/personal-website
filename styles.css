@@ -1,7 +1,10 @@
 body, html {
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
     font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    
+    
 }
 
 .sticky-header {
@@ -57,11 +60,18 @@ body, html {
 
 main {
     padding: 20px;
-    
+    max-width: 800px;
+    margin: 0 auto;
     text-align: center;
 }
 
 section {
     margin-top: 25px;
     margin-bottom: 25px;
+}
+
+.picture {
+    padding-top: 10px;
+    width: 600px;
+    height: auto;
 }
